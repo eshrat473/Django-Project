@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 250px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏥 Hospital Booking System</h1>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/admin/login/">Admin Login</a>
+</nav>
+
+<div class="container">
+    <h2>Welcome to Our Hospital</h2>
+    <p>We are here to provide you with the best medical services. Book appointments easily and quickly.</p>
+
+    <div class="cards">
+        <a class="card" href="/admin/main/appointment/add/">
+            <h3>🩺 Book a Doctor</h3>
+            <p>Schedule appointments with our specialists.</p>
+        </a>
+        <a class="card" href="/admin/main/appointment/">
+            <h3>📋 View Appointments</h3>
+            <p>Check your appointment details with ease.</p>
+        </a>
+        <div class="card">
+            <h3>⏰ Opening Hours</h3>
+            <p>Mon–Fri: 9am to 6pm<br>Sat: 10am to 2pm</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Hospital Booking System. All rights reserved.
+</footer>
+
+</body>
+</html>
